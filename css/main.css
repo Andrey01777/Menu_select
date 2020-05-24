@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+.header {
+  margin: 0 auto;
+  background-color: bisque;
+  width: 100%;
+  max-width: 1170px;
+  height: 900px;
+}
+
+.wrapper {
+  display: block;
+  background-color:#FFF8DC;
+  height: 18%;
+}
+
+.wrap {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  height: 100px;
+  align-items: center;
+  background-color:#FFF8DC;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #710000;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav ul {
+  /* Убираю маркеры у списка*/
+  list-style: none;
+  /* Делаю элементы блочными. */
+  display: block;
+  /* Убираю отступы. */
+  margin:0px;
+  /* Убираю еще отступы! */
+  padding:0px;
+}
+nav ul:after {
+  /* Делаю элементы блочными. */
+  display: block;
+  /* Убираю выравнивание. */
+  float: none;
+  content: ' ';
+  clear: both;
+}
+nav ul.mmenuu > li {
+  /* Задаю выравнивание и позиционирование. */
+  float: left;
+  /* Считаем координаты относительно исходного места*/
+  position: relative;
+}
+nav ul.mmenuu > li > a {
+  /* Делаю элементы блочными: */
+  display: block;
+  /* Задаю белый цвет. */
+  color: #710000;
+  /* Задаю отступ 10px. */
+  padding: 10px;
+  /* Убираю форматирование*/
+  text-decoration: none;
+  /* Задаю цвет. */
+  background-color: #FFF8DC;
+}
+nav ul.mmenuu > li > a:hover {
+  /* Задаю цвет при наведении. */
+  background-color: ;
+}
+nav ul.ssubmenuu {
+  position: absolute;
+  width: 140px;
+  top: 37px;
+  left:0px;
+  /* Делаю субменю скрытыми. */
+  display: none;
+  /* Цвет — белый. */
+  background-color: #FFF8DC;
+}
+ul.ssubmenuu > li {
+  /* Блочное расположение элементов*/
+  display: block;
+}
+nav ul.ssubmenuu > li > a {
+  /* Делаю элементы блочными. */
+  display: block;
+  /* Убираю форматирование*/
+  text-decoration: none;
+  /* Задаю отступ. */
+  padding: 10px;
+  /* Задаю цвет. */
+  color: #710000;
+  /* Еще цвет. */
+  background-color: ;
+}
+nav ul.ssubmenuu > li > a:hover {
+  /* Цвет бэкграунда при наведении. */
+  background-color: ;
+  /* Задаю подчеркивание*/
+  text-decoration: underline;
+}
+nav ul.mmenuu > li:hover > ul.ssubmenuu {
+  /* Делаю элементы блочными. */
+  display: block;
+}
+
+.info {
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 18px;
+  width: 300px;
+}
+
+.info p {
+
+}
+
